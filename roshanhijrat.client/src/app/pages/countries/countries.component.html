@@ -1,0 +1,145 @@
+<style>
+  .btn-custom {
+    background-color: #e02454;
+    color: white;
+    border: 2px solid #e02454;
+    transition: all 0.3s ease;
+  }
+
+    .btn-custom:hover {
+      background-color: transparent;
+      color: #e02454;
+      border: 2px solid #e02454;
+    }
+</style>
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px;">
+    <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+      Country
+    </h3>
+    <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
+      <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+      <li class="breadcrumb-item"><a href="#" class="text-white">Country</a></li>
+      <li class="breadcrumb-item active text-secondary">{{countryName}}</li>
+    </ol>
+    <h5 *ngIf="countryName === 'Canada'" style="color:white">
+      Canada Qualifications are recognized
+      by employers all over the world
+    </h5>
+    <h5 *ngIf="countryName === 'UK'" style="color:white">
+      UK British Qualifications are recognized
+      by employers all over the world
+    </h5>
+    <h5 *ngIf="countryName === 'Australia'" style="color:white">
+      Australia Qualifications are recognized
+      by employers all over the world
+    </h5>
+    <h5 *ngIf="countryName === 'Europe'" style="color:white">
+      Europe Qualifications are recognized
+      by employers all over the world
+    </h5>
+  </div>
+
+</div>
+<div *ngIf="countryName === 'Canada'" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center position-relative">
+      <img src="https://zyikconsultants.com/wp-content/uploads/2024/03/131ef1cf-04aa-4ca5-a686-50a3e3e71805.jpeg"
+           alt="Country Image"
+           class="img-fluid rounded shadow mt-3">
+      <a href="#contact" class="btn btn-custom px-4 py-2 position-absolute translate-middle-x"
+         style="bottom: 20px; left: 50%;">
+        Apply Now
+      </a>
+    </div>
+
+    <div class="col-md-6 mt-4 mt-md-0">
+      <h5 class="display-6 mb-3" style="font-family: 'Cinzel', sans-serif;">
+        Study in {{countryName}}
+      </h5>
+      <p class="lead">
+        ZYIK Consultants specializes in offering comprehensive support to individuals interested in pursuing educational, professional, and visa opportunities in Canada. With a strong emphasis on professionalism and ensuring client satisfaction, our consultancy provides customized services to cater to the diverse needs of applicants. For prospective students looking to study in Canada, we offer expert guidance on selecting appropriate academic programs, preparing application materials, and navigating the visa application process. Our team ensures students receive accurate information and assistance to increase their chances of obtaining study permits and pursuing their educational objectives in Canada.
+        For individuals seeking employment opportunities in Canada, ZYIK Consultants facilitates the process of acquiring work permits.
+      </p>
+    </div>
+
+  </div>
+</div>
+<div *ngIf="countryName === 'Australia'" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center position-relative">
+      <img src="https://zyikconsultants.com/wp-content/uploads/2024/02/australia-img.jpg"
+           alt="Country Image"
+           class="img-fluid rounded shadow mt-3">
+      <a href="#contact" class="btn btn-custom px-4 py-2 position-absolute translate-middle-x"
+         style="bottom: 20px; left: 50%;">
+        Apply Now
+      </a>
+    </div>
+
+    <div class="col-md-6 mt-4 mt-md-0">
+      <h5 class="display-6 mb-3" style="font-family: 'Cinzel', sans-serif;">
+        Study in {{countryName}}
+      </h5>
+      <p class="lead">
+        ZYIK Consultants offers comprehensive services for individuals interested in studying, working, or visiting Australia. With a dedicated team and extensive experience, we assist clients in navigating the complexities of Australian visas and immigration procedures. Whether pursuing higher education, seeking employment opportunities, or exploring the country for leisure, our consultancy provides tailored solutions to meet diverse needs and aspirations.
+
+        For students aspiring to study in Australia, ZYIK Consultants offers guidance throughout the application process. From selecting the right course and institution to preparing visa documentation, we ensure a smooth transition into Australian academic institutions. Our expertise in visa requirements and university admissions facilitates an efficient and hassle-free experience for students aiming to pursue their educational goals in Australia.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div *ngIf="countryName === 'Europe'" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center position-relative">
+      <img src="https://zyikconsultants.com/wp-content/uploads/2024/03/big-ben-westminster-bridge-sunset-london-uk-scaled.jpg"
+           alt="Country Image"
+           class="img-fluid rounded shadow mt-3">
+      <a href="#contact" class="btn btn-custom px-4 py-2 position-absolute translate-middle-x"
+         style="bottom: 20px; left: 50%;">
+        Apply Now
+      </a>
+    </div>
+
+    <div class="col-md-6 mt-4 mt-md-0">
+      <h5 class="display-6 mb-3" style="font-family: 'Cinzel', sans-serif;">
+        Study in {{countryName}}
+      </h5>
+      <p class="lead">
+        ZYIK Consultants is a renowned firm specializing in facilitating study, work, and visit visas for individuals keen on exploring opportunities in European nations. Emphasizing professionalism and client contentment, our consultancy delivers tailored services to cater to the diverse needs of applicants. For students aspiring to study in Europe, we offer expert guidance on selecting appropriate academic programs, preparing application materials, and navigating the visa application process to enhance their chances of securing study permits and pursuing educational goals.
+
+        For those seeking employment opportunities in European countries, ZYIK Consultants simplifies the process of obtaining work permits. We aid clients in understanding eligibility criteria, compiling necessary documentation, and submitting visa applications. Our consultants stay abreast of immigration regulations across various European nations, endeavoring to streamline application processes for timely approvals, enabling clients to embark on professional journeys in Europe.
+      </p>
+    </div>
+
+  </div>
+</div>
+<div *ngIf="countryName === 'UK'" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center position-relative">
+      <img src="https://zyikconsultants.com/wp-content/uploads/2024/02/london.jpg"
+           alt="Country Image"
+           class="img-fluid rounded shadow mt-3">
+      <a href="#contact" class="btn btn-custom px-4 py-2 position-absolute translate-middle-x"
+         style="bottom: 20px; left: 50%;">
+        Apply Now
+      </a>
+    </div>
+
+    <div class="col-md-6 mt-4 mt-md-0">
+      <h5 class="display-6 mb-3" style="font-family: 'Cinzel', sans-serif;">
+        Study in {{countryName}}
+      </h5>
+      <p class="lead">
+        ZYIK Consultants is a distinguished entity specializing in providing comprehensive visa services and educational consulting for individuals aspiring to study, work, or visit the United Kingdom. Renowned for its commitment to excellence, ZYIK Consultants offers tailored solutions to meet the diverse needs of its clients. Whether it’s pursuing higher education, seeking employment opportunities, or exploring the cultural richness of the UK through tourism, ZYIK Consultants ensures a seamless and hassle-free experience for its clientele.
+
+        For students aiming to pursue their academic ambitions in the UK, ZYIK Consultants offers expert guidance throughout the entire application process. From selecting suitable universities and courses to assisting with visa applications and securing accommodation, ZYIK Consultants provides personalized support every step of the way.
+
+        Moreover, ZYIK Consultants extends its services to professionals seeking employment opportunities in the UK.
+      </p>
+    </div>
+
+  </div>
+</div>

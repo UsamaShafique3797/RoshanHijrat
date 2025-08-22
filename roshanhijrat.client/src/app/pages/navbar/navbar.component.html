@@ -17,9 +17,7 @@
     </div>
     <div class="col-lg-4 text-center text-lg-end">
       <div class="d-inline-flex align-items-center" style="height: 45px;">
-        <a href="#" class="text-muted me-2"> Help</a><small> / </small>
-        <a href="#" class="text-muted mx-2"> Support</a><small> / </small>
-        <a href="#" class="text-muted ms-2"> Contact</a>
+        <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Apply Now</a>      
       </div>
     </div>
   </div>
@@ -36,23 +34,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto py-0">
-        <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a routerLink="/about" class="nav-item nav-link">About</a>
-        <a href="service.html" class="nav-item nav-link">Service</a>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-item nav-link">Home</a>
+        <a routerLink="/about" routerLinkActive="active" class="nav-item nav-link">About</a>
+        <a routerLink="/services" routerLinkActive="active" class="nav-item nav-link">Service</a>        
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
+          <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Destination</span></a>
           <div class="dropdown-menu m-0">
-            <a href="feature.html" class="dropdown-item">Feature</a>
-            <a href="countries.html" class="dropdown-item">Countries</a>
-            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-            <a href="training.html" class="dropdown-item">Training</a>
-            <a href="404.html" class="dropdown-item">404 Page</a>
+            <a routerLink="/countries/UK" class="dropdown-item">UK</a>
+            <a routerLink="/countries/Canada" class="dropdown-item">Canada</a>
+            <a routerLink="/countries/Australia" class="dropdown-item">Australia</a>
+            <a routerLink="/countries/Europe" class="dropdown-item">Europe</a>
           </div>
         </div>
-        <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <a routerLink="/contact" routerLinkActive="active" class="nav-item nav-link">Contact</a>
       </div>
-      <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-      <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
+      <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>    
     </div>
   </nav>
 </div>
