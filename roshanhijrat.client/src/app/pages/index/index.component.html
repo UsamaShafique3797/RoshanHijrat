@@ -4,50 +4,75 @@
     <span class="sr-only">Loading...</span>
   </div>
 </div>-->
-<div class="carousel-header">
+<style>
+  .custom-height {
+    height: 400px
+  }
+</style><div class="carousel-header">
   <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
       <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
     </ol>
-    <div class="carousel-inner" role="listbox">
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img src="/assets/img/carousel-1.jpg" class="img-fluid" alt="Image">
-        <div class="carousel-caption">
-          <div class="text-center p-4" style="max-width: 900px;">
-            <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h4>
-            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Immigration Process Starts Here!</h1>
-            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        <img src="/assets/img/slider01.jpg" class="d-block w-100 img-fluid" alt="Image">
+        <div class="carousel-caption  d-flex flex-column justify-content-center h-100">
+          <div class="bg-dark bg-opacity-50 rounded p-3 p-md-4 mx-auto" style="max-width: 900px;">
+            <h4 class="text-white text-uppercase fw-bold mb-2 fs-6 fs-md-5 wow fadeInUp" data-wow-delay="0.2s">
+              LANGUAGE HUB AND CONSULTANCY
+            </h4>
+            <h1 class="text-white fw-bold mb-3 fs-2 fs-md-1 wow fadeInUp" data-wow-delay="0.3s">
+              Your Study Abroad Dreams Start Here
+            </h1>
+            <p class="text-white mb-4 fs-6 fs-md-5 wow fadeInUp" data-wow-delay="0.4s">
+              Expert educational consultancy and English language training to help students succeed in UK, Australia, Europe, USA & Canada
             </p>
-            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Apply Now</a>
+            <a class="btn btn-primary border-0 rounded-pill py-2 px-4 px-md-5 wow fadeInUp" data-wow-delay="0.5s" href="#">
+              Apply Now
+            </a>
           </div>
         </div>
       </div>
+
+      <!-- Slide 2 -->
       <div class="carousel-item">
-        <img src="/assets/img/carousel-2.jpg" class="img-fluid" alt="Image">
-        <div class="carousel-caption">
-          <div class="text-center p-4" style="max-width: 900px;">
-            <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
-            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
-            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        <img src="/assets/img/carousel-2.jpg" class="d-block w-100 img-fluid" alt="Image">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <div class="bg-dark bg-opacity-50 rounded p-3 p-md-4 mx-auto" style="max-width: 900px;">
+            <h5 class="text-white text-uppercase fw-bold mb-2 fs-6 fs-md-5 wow fadeInUp" data-wow-delay="0.2s">
+              Complete Student Support
+            </h5>
+            <h1 class="text-white fw-bold mb-3 fs-2 fs-md-1 wow fadeInUp" data-wow-delay="0.3s">
+              Best Student Visa Services
+            </h1>
+            <p class="text-white mb-4 fs-6 fs-md-5 wow fadeInUp" data-wow-delay="0.4s">
+              From English language preparation to university admission and visa support - we guide students through every step of their study abroad journey
             </p>
-            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">Apply Now</a>
+            <a class="btn btn-primary border-0 rounded-pill py-2 px-4 px-md-5 wow fadeInUp" data-wow-delay="0.5s" href="#">
+              Apply Now
+            </a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false"></span>
-      <span class="visually-hidden-focusable">Previous</span>
+      <span class="carousel-control-prev-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false"></span>
-      <span class="visually-hidden-focusable">Next</span>
+      <span class="carousel-control-next-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
   </div>
 </div>
+
 <!-- Carousel End -->
 <!-- Modal Search Start -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -78,7 +103,7 @@
           <div class="counter-content">
             <h3>Visa Categories</h3>
             <div class="d-flex align-items-center justify-content-center">
-              <span class="counter-value" data-toggle="counter-up">31</span>
+              <span class="counter-value" data-toggle="counter-up">0</span>
               <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
             </div>
           </div>
@@ -92,7 +117,7 @@
           <div class="counter-content">
             <h3>Team Members</h3>
             <div class="d-flex align-items-center justify-content-center">
-              <span class="counter-value" data-toggle="counter-up">377</span>
+              <span class="counter-value" data-toggle="counter-up">0</span>
               <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
             </div>
           </div>
@@ -106,7 +131,7 @@
           <div class="counter-content">
             <h3>Visa Process</h3>
             <div class="d-flex align-items-center justify-content-center">
-              <span class="counter-value" data-toggle="counter-up">4.9</span>
+              <span class="counter-value" data-toggle="counter-up">0</span>
               <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
             </div>
           </div>
@@ -120,7 +145,7 @@
           <div class="counter-content">
             <h3>Success Rates</h3>
             <div class="d-flex align-items-center justify-content-center">
-              <span class="counter-value" data-toggle="counter-up">98</span>
+              <span class="counter-value" data-toggle="counter-up">100</span>
               <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
             </div>
           </div>
@@ -137,7 +162,7 @@
         <h5 class="sub-title text-primary px-3">Why Choose Us</h5>
       </div>
       <h1 class="display-5 mb-4">Offer Tailor Made Services That Our Client Requires</h1>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+      <p class="mb-0">We understand that every student’s journey is unique. That’s why we design personalized solutions—whether it’s course selection, university admission, visa application, or pre-departure guidance—so you receive the exact support you need at every step.</p>
     </div>
     <div class="row g-4 justify-content-center text-center">
       <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -147,7 +172,7 @@
           </div>
           <div class="feature-content d-flex flex-column">
             <h5 class="mb-3">Cost-Effective</h5>
-            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+            <p class="mb-3">We provide affordable services without compromising on quality, helping you achieve your goals within budget.</p>
             <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
@@ -159,7 +184,7 @@
           </div>
           <div class="feature-content d-flex flex-column">
             <h5 class="mb-3">Visa Assistance</h5>
-            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+            <p class="mb-3">Our experts guide you through the entire visa application process, ensuring accuracy and higher chances of approval.</p>
             <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
@@ -171,7 +196,7 @@
           </div>
           <div class="feature-content d-flex flex-column">
             <h5 class="mb-3">Faster Processing</h5>
-            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+            <p class="mb-3">With streamlined procedures and expert handling, we make your application process quicker and stress-free.</p>
             <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
@@ -183,7 +208,7 @@
           </div>
           <div class="feature-content d-flex flex-column">
             <h5 class="mb-3">Direct Interviews</h5>
-            <p class="mb-3">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
+            <p class="mb-3">We prepare you for university and visa interviews with confidence-building sessions and practical guidance.</p>
             <a class="btn btn-secondary rounded-pill" href="#">Read More<i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
@@ -202,59 +227,59 @@
       <div class="sub-style">
         <h5 class="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
       </div>
-      <h1 class="display-5 mb-4">Immigration & visa services following Countries</h1>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+      <h1 class="display-5 mb-4">Student Visa Services for the Following Countries!</h1>
+      <p class="mb-0">We offer expert guidance and complete support for students aspiring to study abroad in leading destinations such as the UK, Canada, the US, and Australia. From selecting the right university to obtaining your student visa, we ensure a smooth, reliable, and hassle-free journey toward your academic goals.!</p>
     </div>
     <div class="row g-4 text-center">
       <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="country-item">
           <div class="rounded overflow-hidden">
-            <img src="/assets/img/country-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+            <img src="/assets/img/uk.png" class="img-fluid w-100 rounded custom-height" alt="Image">
           </div>
           <div class="country-flag">
-            <img src="/assets/img/brazil.jpg" class="img-fluid rounded-circle" alt="Image">
+            <img src="/assets/img/uk-flag.png" class="img-fluid rounded-circle" alt="Image">
           </div>
           <div class="country-name">
-            <a href="#" class="text-white fs-4">Brazil</a>
+            <a routerLinkActive="active" routerLink="/countries/UK" class="text-white fs-4">UK</a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
         <div class="country-item">
           <div class="rounded overflow-hidden">
-            <img src="/assets/img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+            <img src="/assets/img/canada.jpg" class="img-fluid w-100 rounded custom-height" alt="Image">
           </div>
           <div class="country-flag">
-            <img src="/assets/img/india.jpg" class="img-fluid rounded-circle" alt="Image">
+            <img src="/assets/img/can-flag.png" class="img-fluid rounded-circle" alt="Image">
           </div>
           <div class="country-name">
-            <a href="#" class="text-white fs-4">india</a>
+            <a routerLink="/countries/Canada" class="text-white fs-4">Canada</a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
         <div class="country-item">
           <div class="rounded overflow-hidden">
-            <img src="/assets/img/country-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+            <img src="/assets/img/country-3.jpg" class="img-fluid w-100 rounded custom-height" alt="Image">
           </div>
           <div class="country-flag">
             <img src="/assets/img/usa.jpg" class="img-fluid rounded-circle" alt="Image">
           </div>
           <div class="country-name">
-            <a href="#" class="text-white fs-4">New York</a>
+            <a routerLink="/countries/usa" class="text-white fs-4">US</a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
         <div class="country-item">
           <div class="rounded overflow-hidden">
-            <img src="/assets/img/country-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+            <img src="/assets/img/country-4.jpg" class="img-fluid w-100 rounded custom-height" alt="Image">
           </div>
           <div class="country-flag">
-            <img src="/assets/img/italy.jpg" class="img-fluid rounded-circle" alt="Image">
+            <img src="/assets/img/aus-flag.png" class="img-fluid rounded-circle" alt="Image">
           </div>
           <div class="country-name">
-            <a href="#" class="text-white fs-4">Italy</a>
+            <a routerLink="/countries/Australia" class="text-white fs-4">Australia</a>
           </div>
         </div>
       </div>
@@ -356,8 +381,8 @@
       <div class="sub-style">
         <h5 class="sub-title text-primary px-3">CHECK OUR TRAINING</h5>
       </div>
-      <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Travisa</h1>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+      <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Consultants</h1>
+      <p class="mb-0">We provide personalized coaching sessions and practical training to prepare students for admission tests, language proficiency exams, and visa interviews. Our expert consultants ensure you gain the confidence, knowledge, and skills needed to succeed in your study abroad journey.</p>
     </div>
     <div class="row g-4">
       <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
@@ -423,7 +448,7 @@
             <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
   </div>
 </div>
