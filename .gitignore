@@ -4,3 +4,6 @@
 
 /.vs
 /roshanhijrat.client/obj/Debug
+/RoshanHijrat.Server/bin/Debug/net8.0
+/.cr/personal/FavoritesList
+/RoshanHijrat.Server/obj/Debug/net8.0

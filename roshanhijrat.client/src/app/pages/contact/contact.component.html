@@ -1,4 +1,4 @@
-<div class="container-fluid bg-breadcrumb">
+<div class="container-fluid bg-breadcrumb-contact">
   <div class="container text-center py-5" style="max-width: 900px;">
     <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">
       Contact Us</h3>
@@ -75,50 +75,54 @@
           <h5 class="sub-title text-primary pe-3">Let’s Connect</h5>
         </div>
         <h1 class="display-5 mb-4">Send Your Message</h1>
-        <p class="mb-3">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-        <form>
+        <p class="mb-3">
+          Have questions about studying abroad? Share your queries with us regarding student visa requirements, university admissions, or application processes.
+          Our team of expert consultants will review your message and guide you with the best possible solutions for your study abroad journey.
+        </p>
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
           <div class="row g-4">
             <div class="col-lg-12 col-xl-6">
               <div class="form-floating">
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                <input type="text" class="form-control" id="name" [(ngModel)]="formData.name" name="name" required>
                 <label for="name">Your Name</label>
               </div>
             </div>
             <div class="col-lg-12 col-xl-6">
               <div class="form-floating">
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email" required>
                 <label for="email">Your Email</label>
               </div>
             </div>
             <div class="col-lg-12 col-xl-6">
               <div class="form-floating">
-                <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                <input type="text" class="form-control" id="phone" [(ngModel)]="formData.phone" name="phone">
                 <label for="phone">Your Phone</label>
               </div>
             </div>
             <div class="col-lg-12 col-xl-6">
               <div class="form-floating">
-                <input type="text" class="form-control" id="project" placeholder="Project">
+                <input type="text" class="form-control" id="project" [(ngModel)]="formData.project" name="project">
                 <label for="project">Your Project</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                <input type="text" class="form-control" id="subject" [(ngModel)]="formData.subject" name="subject">
                 <label for="subject">Subject</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                <textarea class="form-control" id="message" [(ngModel)]="formData.message" name="message" style="height: 160px"></textarea>
                 <label for="message">Message</label>
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary w-100 py-3">Send Message</button>
+              <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
             </div>
           </div>
         </form>
+
       </div>
     </div>
     <div class="office pt-5">

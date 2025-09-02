@@ -217,7 +217,7 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 96px;
     transition: .5s;
 }
 
@@ -337,8 +337,40 @@
 
 
 /*** Single Page Hero Header Start ***/
-.bg-breadcrumb {
-  background: linear-gradient(rgba(0, 58, 102, 0.9), rgba(0, 58, 102, 0.8)), url(/assets/img/breadcrumb.png);
+.bg-breadcrumb-dest {
+  background: linear-gradient(rgba(0, 58, 102, 0.9), rgb(0 58 102 / 0%)), url(/assets/img/dest-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  padding: 100px 0 60px 0;
+}
+.bg-breadcrumb-services {
+  background: linear-gradient(rgba(0, 58, 102, 0.9), rgb(0 58 102 / 0%)), url(/assets/img/servicesbread.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  padding: 100px 0 60px 0;
+}
+.bg-breadcrumb-about {
+  background: linear-gradient(rgba(0, 58, 102, 0.9), rgb(0 58 102 / 0%)), url(/assets/img/aboutbread.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  padding: 100px 0 60px 0;
+}
+.bg-breadcrumb-contact {
+  background: linear-gradient(rgba(0, 58, 102, 0.9), rgb(0 58 102 / 0%)), url(/assets/img/contactbread.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  padding: 100px 0 60px 0;
+}
+.bg-breadcrumb-apply {
+  background: linear-gradient(rgba(0, 58, 102, 0.9), rgb(0 58 102 / 0%)), url(/assets/img/dest-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: initial;
